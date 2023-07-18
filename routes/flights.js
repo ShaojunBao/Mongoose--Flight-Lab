@@ -9,7 +9,14 @@ router.get('/new',flightsCtrl.new);
 // Post /flights
 router.post('/',flightsCtrl.create);
 
-//GET route for /movies
+//GET route for /flights
 router.get('/',flightsCtrl.index);
+
+//GET route for/:id
+router.get('/:id', flightsCtrl.show);
+
+
+
+
 
 module.exports = router;
