@@ -1,0 +1,80 @@
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+nav {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* Form */
+.flight-form {
+  display: grid;
+  gap: 10px;
+}
+
+.form-field {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+
+.form-field label {
+  font-weight: bold;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 5px;
+}
+
+.error-msg {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Table */
+.flights-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.flights-table th,
+.flights-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+.flights-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.flights-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
